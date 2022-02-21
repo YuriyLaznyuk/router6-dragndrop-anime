@@ -13,6 +13,7 @@ const links = [
 	{to: '/css-transition', title: 'CSSTransition', class: 'navbar-link'},
 	{to: '/switch', title: 'SwitchTransition', class: 'navbar-link'},
 	{to: '/group', title: 'TransitionGroup', class: 'navbar-link'},
+	{to: '/page', title: 'ChangePage', class: 'navbar-link'},
 ];
 
 const Navbar = () => {
