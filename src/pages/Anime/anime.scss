@@ -1,0 +1,52 @@
+.anime {
+	height: 100vh;
+	width: 100vw;
+	&__wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90vh;
+		&-circle {
+			width: 100px;
+			height: 100px;
+			border: 3px dashed;
+			border-radius: 50%;
+			animation: show-loader 1s forwards;
+		}
+	}
+}
+
+.anime__wrap-circle.entering {
+	animation: show-loader 0.5s forwards;
+}
+.anime__wrap-circle.entered {
+	animation: rotate-loader 0.3s infinite;
+}
+.anime__wrap-circle.exiting {
+	animation: show-loader 0.5s reverse;
+}
+.anime__wrap-circle.exited {
+}
+
+@keyframes show-loader {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes rotate-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

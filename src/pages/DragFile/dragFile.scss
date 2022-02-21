@@ -1,0 +1,20 @@
+@mixin block($color) {
+	margin: 20px auto;
+	width: 500px;
+	height: 300px;
+	border: 5px dashed $color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dragFile {
+	margin: 20px auto;
+	text-align: center;
+
+	&__drop {
+		@include block(#f0f);
+	}
+	&__aria {
+		@include block(#000);
+	}
+}

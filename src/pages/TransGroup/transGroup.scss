@@ -1,0 +1,51 @@
+.transGroup {
+	width: 400px;
+	margin: 120px auto;
+	text-align: center;
+	&__input {
+		margin: 20px 0 0 0;
+		padding: 5px;
+		text-align: center;
+		border-top: 3px solid;
+	}
+	&__wrap {
+		margin: 20px;
+		border-top: 5px solid;
+		&-todo {
+			margin: 5px 0 0 0;
+			border: 1px solid;
+			text-align: center;
+			padding: 4px;
+		}
+	}
+}
+
+.transGroup__wrap-todo-enter-active {
+	animation: fade-in 0.5s forwards;
+}
+
+.transGroup__wrap-todo-exit-active {
+	animation: fade-out 0.5s forwards;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-150px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(150px);
+	}
+}

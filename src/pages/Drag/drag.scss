@@ -1,0 +1,23 @@
+.drag{
+
+&__block{
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-item{
+    width: 150px;
+    height: 300px;
+    border: 2px solid green;
+    border-radius: 20px;
+    margin: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:grab ;
+    &:last-child{
+      margin: 0;
+    }
+  }
+}
+}
